@@ -20,5 +20,6 @@ Claude Code skills marketplace, packaged the same way as [obra/superpowers](http
 | `requesting-code-review` | Fork of [obra/superpowers](https://github.com/obra/superpowers), locally tuned |
 | `next-best-practices` | Fork of [vercel-labs/next-skills](https://github.com/vercel-labs/next-skills), locally tuned |
 | `vercel-react-native-skills` | Fork of [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills), locally tuned |
+| `nestjs-best-practices` | Fork of [kadajett/agent-nestjs-skills](https://github.com/kadajett/agent-nestjs-skills), locally tuned |
 
 Each forked skill carries a "Fork notice" at the top of its `SKILL.md` pointing back to the upstream source. Check the upstream repo's license before redistributing those.
