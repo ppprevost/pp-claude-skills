@@ -4,14 +4,14 @@ description: NestJS best practices and architecture patterns for production-read
 license: MIT
 metadata:
   author: Kadajett
-  version: "1.5.0"
+  version: "1.6.0"
 ---
 > **Fork notice**: originally installed from [kadajett/agent-nestjs-skills](https://github.com/kadajett/agent-nestjs-skills). This version has been locally tuned; check the upstream repo for its license before redistributing.
 
 
 # NestJS Best Practices
 
-40 rules across 10 categories. Reference catalog with task-driven workflow.
+43 rules across 10 categories. Reference catalog with task-driven workflow.
 
 ## TL;DR
 
@@ -41,6 +41,9 @@ Skip when: not NestJS (use `nodejs-backend-patterns`), pure TS type Q (use `mast
 | JWT / auth / authz | `security-auth-jwt`, `security-use-guards` | `security-rate-limiting` |
 | validate request body / DTO | `security-validate-all-input`, `api-use-pipes`, `api-use-dto-serialization` | `security-sanitize-output` |
 | exception / error handling | `error-use-exception-filters`, `error-throw-http-exceptions`, `error-handle-async-errors` | — |
+| seed/debug/reset route, dev-only endpoint | `security-guard-dev-endpoints` | — |
+| bootstrap hardening (`main.ts`, CORS, headers) | `security-harden-attack-surface` | `security-rate-limiting` |
+| REST vs oRPC vs tRPC / frontend-backend contract | `api-choose-rpc-layer` | — |
 | slow API / N+1 / DB perf | `db-avoid-n-plus-one`, `perf-optimize-database`, `perf-use-caching` | `arch-use-repository-pattern` |
 | lazy load / startup | `perf-lazy-loading`, `perf-async-hooks` | — |
 | testing / mock services | `test-use-testing-module`, `test-mock-external-services`, `test-e2e-supertest` | — |
@@ -79,6 +82,9 @@ If no row matches, scan Code-Pattern Triggers.
 | Bull/BullMQ direct in controller | `micro-use-queues` |
 | Per-request scope injected into singleton | `di-scope-awareness` |
 | No `/health` in microservice | `micro-use-health-checks` |
+| `seed()`/`dump-*`/`debug` controller route, no `NODE_ENV` check | `security-guard-dev-endpoints` |
+| `app.enableCors()` with no `origin` allowlist, or missing `helmet()` in `main.ts` | `security-harden-attack-surface` |
+| Hand-duplicated frontend types matching a REST response shape | `api-choose-rpc-layer` |
 
 ## Priority Tiers
 

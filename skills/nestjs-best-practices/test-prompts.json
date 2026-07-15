@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "prompt": "Build a NestJS users module with JWT auth, class-validator DTOs, exception filters, and rate limiting.",
+    "expected": "Cites security-auth-jwt, security-validate-all-input, security-use-guards, error-use-exception-filters, security-rate-limiting. Uses constructor injection."
+  },
+  {
+    "id": 2,
+    "prompt": "My NestJS app has circular module dependencies and slow DB queries with N+1. How do I fix it?",
+    "expected": "Cites arch-avoid-circular-deps, db-avoid-n-plus-one, arch-use-repository-pattern, perf-optimize-database, perf-use-caching."
+  },
+  {
+    "id": 3,
+    "prompt": "Set up unit + e2e testing for a NestJS controller with a mocked external service.",
+    "expected": "Cites test-use-testing-module, test-mock-external-services, test-e2e-supertest. Provides Test.createTestingModule."
+  }
+]
