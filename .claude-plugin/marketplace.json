@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "pp-claude-skills",
+  "description": "Pierre-Philippe Prevost's Claude Code skills: backend/frontend stack opinions plus tuned forks of TypeScript, DDD/Hexagonal, and code-review skills.",
+  "owner": {
+    "name": "Pierre-Philippe Prevost",
+    "url": "https://github.com/ppprevost"
+  },
+  "plugins": [
+    {
+      "name": "pp-claude-skills",
+      "description": "Backend/frontend stack opinions (pp-backend-developer, pp-frontend-developer) plus tuned forks of mastering-typescript, clean-ddd-hexagonal, and requesting-code-review.",
+      "source": "./",
+      "category": "programming-languages"
+    }
+  ]
+}

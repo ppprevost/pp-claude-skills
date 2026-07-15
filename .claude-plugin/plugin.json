@@ -1,0 +1,8 @@
+{
+  "name": "pp-claude-skills",
+  "description": "Backend/frontend stack opinions plus tuned forks of mastering-typescript, clean-ddd-hexagonal, and requesting-code-review.",
+  "author": {
+    "name": "Pierre-Philippe Prevost",
+    "url": "https://github.com/ppprevost"
+  }
+}
